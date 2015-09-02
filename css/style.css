@@ -1,0 +1,434 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*cleazrfix*/
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*reset perso*/
+
+li{
+    list-style: none;
+}
+
+/*typo*/
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    background: #ccc;
+}
+
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #876c27;
+}
+h1 {
+    font-size: 4.9rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 3.9rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 4.9rem;
+
+
+}
+h2:after{
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    content: " ";
+    display: block;
+    border-bottom: 5px solid #876c27;
+    width: 50px;
+}
+h3 {
+    font-size: 3.1rem;
+
+}
+p,
+a {
+    max-width: 500px;
+    font-size: 1.6rem;
+    font-family: 'Merriweather', sans-serif;
+ 
+}
+
+a{
+    color: #876c27;
+}
+
+
+/*style*/
+body,html{
+    height: 100%; width: 100%;
+        font-family: "merriweather", serif;
+    -font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.8;
+}
+
+header{
+  height: 100%; width: 100%;
+  background:  no-repeat;
+
+ background: url("../img/header.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+.header__container{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50% , -50%);
+    text-align: center;
+}
+.header__logo{
+    width: 50%;
+}
+.nav{
+ height: 58px;
+ border-top: 1px solid #876c27;;
+ border-bottom: 1px solid #876c27;
+background: #013240;
+}
+
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
+} 
+
+.nav__container{
+margin: 0 auto;
+  max-width: 1024px;  
+}
+
+.nav__li{
+    float: left;
+    width:  calc(25% - 3px);
+    border-right: 1px solid #876c27;
+}
+
+.nav__li:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    border-right: 1px solid #876c27;
+}
+
+
+.nav__li:last-child{
+
+  border-right: none;
+
+}
+
+
+.nav__li--a{
+    display: block;
+    text-align: center;
+    line-height: 60px;
+ height: 60px;
+  color: #876c27;
+  text-transform: uppercase;
+
+}
+
+
+/*section*/
+section{
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.section:nth-child(odd){
+background: #013240;
+color: #fff;
+
+
+
+}
+.section__content{
+margin: 0 auto;
+  max-width: 1024px;  
+
+}
+
+
+/*col-2*/
+.col-2bis li{
+float: left;
+width: 30%;
+padding-left:10%;
+padding-right:10%;
+    margin: 4.9rem 0;
+  }
+
+.col-2bis li:nth-child(2n){
+padding-left: calc(10% - 2px);
+border-left: 2px solid #876c27;
+
+}
+
+.col-2bis li a{
+display: block;
+margin-top: 3.1rem;
+
+}
+
+.col-2 li{
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    margin: 10rem 0;
+/*    overflow: hidden;
+*/
+}
+.col-2 li:nth-child(2n){
+    margin-right: 0%;
+
+
+}
+
+
+
+
+.col_right-text{
+
+    position: relative;
+    top: 11rem;
+    left: -15%;
+     
+}
+
+.col_left-text{
+
+ position: relative;
+    top: 11rem;
+    right: -15%;
+         
+
+}
+
+
+
+.col-3 li{
+    width: 33.33%;
+    float: left;
+
+}
+.col-3 li:nth-child(3n){
+    margin-right: 0%;
+
+}
+
+
+
+
+
+/* Responsive iFrame */
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.responsive-iframe-container iframe,   
+.vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#map{
+    height: 49rem;
+    position: relative;
+}
+
+#map:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 98;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+
+    background:  #013240;
+}
+
+.tel{
+position: absolute;
+left: 50%;
+top: 50%;
+-webkit-transform: translate(-50%, -50%);
+    z-index: 99;
+
+}
+
+footer{
+    text-align: center;
+}
+
+/*btn*/
+
+.btn-1{
+
+
+
+}
+
+.btn-1:hover{
+
+text-decoration: underline;
+    
+
+}
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
