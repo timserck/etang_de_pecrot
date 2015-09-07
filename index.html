@@ -9,6 +9,8 @@
       <link rel="stylesheet" href="css/owl.carousel.css">
       <link rel="stylesheet" href="css/owl.theme.css">
       <link rel="stylesheet" href="css/fullcalendar.css">
+      <link rel="stylesheet" href="css/hugrid.css">
+      
    </head>
    <body>
       <header>
@@ -140,11 +142,13 @@
       </section>
       <footer><small>Timothée Serck</small></footer>
       <script src="js/lib/jquery.min.js"></script>
+    
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDantvsbWyrcyA1y91q_YaYbxEdYyQ876U&callback=initMap"
          type="text/javascript"></script>
-      <script async="" src="http://www.google-analytics.com/analytics.js"></script>
+      <script async src="http://www.google-analytics.com/analytics.js"></script>
       <script src="js/owl.carousel.js"></script>
       <script src="js/lib/moment.min.js"></script>
+      <script src="js/lib/hugrid.js"></script>
       <script src="js/fullcalendar.js"></script>
       <script type="text/javascript">
       var map;
@@ -211,16 +215,38 @@
          
          $(document).ready(function() {
          
-         
+                   definegrid = function() {
+              var browserWidth = $("canvas").width();
+              if (browserWidth <= 960) {
+                  pageUnits = 'px';
+                  colUnits = 'px';
+                  pagewidth = 1020;
+                  columns = 34;
+                  columnwidth = 30;
+                  gutterwidth = 0;
+                  pagetopmargin = 0;
+                  rowheight = 28.8;
+                  gridonload = 'off';
+                  makehugrid();
+              }
+          }
+          definegrid();
+          setgridonload();
+          $(window).resize(function() {
+              definegrid();
+              setgridonresize();
+          });
+
+
          $('#calendar').fullCalendar({
          
          	// THIS KEY WON'T WORK IN PRODUCTION!!!
          	// To make your own Google API key, follow the directions here:
          	// http://fullcalendar.io/docs/google_calendar/
-         	googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+         	googleCalendarApiKey: 'AIzaSyDantvsbWyrcyA1y91q_YaYbxEdYyQ876U',
          
          	// US Holidays
-         	events: 'usa__en@holiday.calendar.google.com',
+         	events: 'abcd1234@group.calendar.google.com',
          	
          	eventClick: function(event) {
          		// opens events in a popup window
