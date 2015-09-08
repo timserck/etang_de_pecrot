@@ -37,24 +37,31 @@
       </nav>
       <section class="section info">
          <div class="section__content">
-            <h2>Un cadre magnifique</h2>
-            <ul class="clearfix col col-2">
-               <li><img src="img/header.png" alt=""></li>
-               <li class="col_right-text">
-                  <h3>Un cadre</h3>
-                  <p>Voici un magnifique plan d'eau de 5 hectares aux abords des Ardennes Brabançonnes, plus précisément à Pécrot, dans l'entité de Grez-Doiceau.</p>
-               </li>
-            </ul>
-            <ul class="clearfix col col-2">
-               <li class="col_left-text">
-                  <h3>Un patrimoine classé</h3>
+            <ul class="clearfix col-2-3">
+               <li><img src="img/etang.png" alt=""></li>
+               <li>
+                  
+                  <p class="intro">Un magnifique plan d'eau de 5 hectares aux abords des Ardennes Brabançonnes, plus précisément à Pécrot, dans l'entité de Grez-Doiceau.</p>
+               	<ul class="col-2 clearfix">
+               		<li>
+               			<h3>Un patrimoine classé</h3>
                   <p>Classé Natura 2000, ce site constitue un des plus beaux marais de la vallée de la Dyle, sa grande superficie en fait un endroit idéal de refuges et de nidifications pour de nombreux oiseaux d'eau.</p>
-               </li>
-               <li><img src="img/natura2000.png" alt=""></li>
-            </ul>
-            <h3>Une multitudes d'especes</h3>
+                  <li>
+                  	 <img src="img/natura2000.png" alt="">
+                  </li>
+                 
+
+      
+               		</li>
+               			</ul>
+               			 	<ul class="col-2 clearfix">
+               		<li>
+              <h3>Une multitudes d'especes</h3>
             <p>L'activité principale est la pratique de la pêche. Nous avons une grandes varietée d'especes au sein du lac.</p>
-            <div id="owl-demo">
+            </li>
+               		<li>
+
+                        <div id="owl-demo">
                <div class="item">
                   <figure>
                      <img src="img/brochet.png" alt="">
@@ -110,13 +117,23 @@
                   </figure>
                </div>
             </div>
+               		</li>
+               	</ul>
+               	
+               </li>
+              
+            </ul>
+
+       
+            
+
          </div>
       </section>
       <section class="section">
          <div class="section__content">
             <h2>Des evenements & une école</h2>
             <div id='calendar'></div>
-            <ul class="col-2bis clearfix">
+            <ul class="col-2 clearfix">
                <li>
                   <h3>Une école</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias consectetur saepe accusamus explicabo porro pariatur sint delectus, in magni, expedita tempore libero iste, officia autem quidem fuga illo aspernatur.</p>
@@ -263,11 +280,11 @@
          
          $("#owl-demo").owlCarousel({
          
-             // autoPlay: 3000, //Set AutoPlay to 3 seconds
+             autoPlay: 3000, //Set AutoPlay to 3 seconds
          
              items : 4,
-             itemsDesktop : [1199,3],
-             itemsDesktopSmall : [979,3]
+             itemsDesktop : [1000,3],
+             itemsDesktopSmall : [900,3]
          
          });
          
