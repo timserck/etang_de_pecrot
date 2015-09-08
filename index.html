@@ -132,14 +132,17 @@
       <section class="section">
          <div class="section__content">
             <h2>Des evenements & une école</h2>
-            <div id='calendar'></div>
+            
             <ul class="col-2 clearfix">
                <li>
-                  <h3>Une école</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias consectetur saepe accusamus explicabo porro pariatur sint delectus, in magni, expedita tempore libero iste, officia autem quidem fuga illo aspernatur.</p>
-                  <a class="btn-1" href="">en savoir plus</a>
+               <div id='calendar'></div>
+                 
                </li>
                <li>
+                <h3>Une école</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias consectetur saepe accusamus explicabo porro pariatur sint delectus, in magni, expedita tempore libero iste, officia autem quidem fuga illo aspernatur.</p>
+                  <a class="btn-1" href="">en savoir plus</a>
+
                   <h3>Des concours</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse alias consectetur saepe accusamus explicabo porro pariatur sint delectus, in magni, expedita tempore libero iste, officia autem quidem fuga illo aspernatur.</p>
                   <a class="btn-1" href="">en savoir plus</a>
@@ -147,15 +150,32 @@
             </ul>
          </div>
       </section>
-      <section id="map" class="section">
-         <h2>Contact</h2>
-         <div class="tel">
-            <ul class="col-3">
-               <li>zert</li>
-               <li>zert</li>
-               <li>zert</li>
-            </ul>
-         </div>
+      <section  class="section">
+      <h2>Contact</h2>
+       <ul class="col-2 clearfix">
+       	<li>
+       		  <ul class="col-2 clearfix">
+       	<li>
+       	<h3>Abrutit 1</h3><p>sdf sqdf</p>
+       	<h3>Abrutit 1</h3><p>sdf sqdf</p> 
+       	<h3>Abrutit 1</h3><p>sdf sqdf</p> 
+       	<h3>Abrutit 1</h3><p>sdf sqdf</p> 
+
+       	</li>
+       	<li>
+       	<h3>Abrutit 1</h3><p>sdf sqdf</p>
+       	<h3>Abrutit 1</h3><p>sdf sqdf</p> 
+       	<h3>Abrutit 1</h3><p>sdf sqdf</p> 
+       	<h3>Abrutit 1</h3><p>sdf sqdf</p> 
+  
+
+       	</li>
+       	
+       </ul>
+
+       	</li>
+       	<li id="map"></li>
+       </ul>
       </section>
       <footer><small>Timothée Serck</small></footer>
       <script src="js/lib/jquery.min.js"></script>
@@ -234,10 +254,10 @@
          
                    definegrid = function() {
               var browserWidth = $("canvas").width();
-              if (browserWidth <= 960) {
+              if (browserWidth <= 1290) {
                   pageUnits = 'px';
                   colUnits = 'px';
-                  pagewidth = 1020;
+                  pagewidth = 1290;
                   columns = 34;
                   columnwidth = 30;
                   gutterwidth = 0;
@@ -247,6 +267,7 @@
                   makehugrid();
               }
           }
+
           definegrid();
           setgridonload();
           $(window).resize(function() {
